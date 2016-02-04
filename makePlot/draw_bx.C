@@ -87,14 +87,14 @@ void draw_bx(){
 	TH1F * hmass = new TH1F("hmass","hmass", 20, 81, 101);
 	//Float_t xbins[31] = {0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 240, 280, 320, 360, 400, 440, 480, 520, 560, 600};
 	//Float_t xbins[11] ={0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5};
-	TH1F * hbx = new TH1F("hbx","hbx", 360, 0, 359);
-	TH1F * hbx_a = new TH1F("hbx_a","hbx_a", 360, 0, 359);
-	TH1F * hbx_dZ = new TH1F("hbx_dZ","hbx_dZ", 360, 0, 359);
-	TH1F * hbxD = new TH1F("hbxD","hbxD", 360, 0, 359);
-	TH1F * hbxD_a = new TH1F("hbxD_a","hbxD_a", 360, 0, 359);
-	TH1F * hbxD_dZ = new TH1F("hbxD_dZ","hbxD_dZ", 360, 0, 359);
-	TH1F * hbxDno_a = new TH1F("hbxDno_a","hbxDno_a", 360, 0, 359);
-	TH1F * hbxDno_dZ = new TH1F("hbxDno_dZ","hbxDno_dZ", 360, 0, 359);
+	TH1F * hbx = new TH1F("hbx","hbx", 18, 0, 3600);
+	TH1F * hbx_a = new TH1F("hbx_a","hbx_a", 18, 0, 3600);
+	TH1F * hbx_dZ = new TH1F("hbx_dZ","hbx_dZ", 18, 0, 3600);
+	TH1F * hbxD = new TH1F("hbxD","hbxD", 18, 0, 3600);
+	TH1F * hbxD_a = new TH1F("hbxD_a","hbxD_a", 18, 0, 3600);
+	TH1F * hbxD_dZ = new TH1F("hbxD_dZ","hbxD_dZ", 18, 0, 3600);
+	TH1F * hbxDno_a = new TH1F("hbxDno_a","hbxDno_a", 18, 0, 3600);
+	TH1F * hbxDno_dZ = new TH1F("hbxDno_dZ","hbxDno_dZ", 18, 0, 3600);
 	//TH1F * hbx_eff = new TH1F("hbx_eff","hbx_eff", 30, xbins);
 	//TH1F * hbx = new TH1F("hbx","hbx", 30, 0, 600);
 
