@@ -32,6 +32,15 @@ root -l -b -q eff_Mu17Mu8_dZ.C
 
 
 
+git fetch
+git add *
+git status
+git commit -m "workflow of trigger study for 2016 data"
+git push
+
+
+
+
 
 
 git fetch
