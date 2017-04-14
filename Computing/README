@@ -1,0 +1,37 @@
+
+
+////////////////clean pairs for double muon trigger and save the info of trigger path used in fitMuonTrigger*.py
+root -l -b -q INPUTFILE cleanPairs_double.cxx++  
+root -l -b -q INPUTFILE cleanPairs_mu17.cxx++   ////for Mu17 only save info not clean the pair
+
+
+////////////////compute the efficiency///////////////////////////
+for doubleMuon path:
+cmsRun fitMuonTriggerNew_Mu17Mu8_dataBCD.py lateData  TRIGGERPATH
+for the reference trigger Mu17:
+cmsRun fitMuonTriggerNew_Mu17eff_dataBCD.py lateData  
+
+*lateData is to add cut on runs to only look at the worked range for 2016 data which has some problem with HIPs.
+*TRIGGERPATH the trigger path we need.
+
+
+/////////////////collect all the efficiency info from all the root file//////////////////
+root -l -b -q recupThePlots.C
+
+
+///////////////// compute the efficiency of doubleMuon path with Ref of Mu17////////////
+use files named eff_Mu17*.C, eff_Mu17Mu8.C for nodZ, eff_Mu17Mu8_dZ.C for dZ
+root -l -b -q eff_Mu17Mu8.C
+root -l -b -q eff_Mu17Mu8_dZ.C
+
+
+
+
+
+
+
+
+
+
+
+
