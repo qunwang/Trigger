@@ -1,3 +1,6 @@
+////////////////for skimmed tree//////////////////////
+in TnPUtils
+./skimTree /tmp/quwang/data_reRECO_Moriond17_Run2016B*.root  skimmedTree_data_reRECO_Moriond17_Run2016B.root --remove "all" --keep "tag_DoubleIsoMu17Mu8_IsoMu17leg DoubleIsoMu17Mu8_IsoMu17leg DoubleIsoMu17Mu8_IsoMu8leg tag_DoubleIsoMu17Mu8_IsoMu8leg tag_DoubleIsoMu17TkMu8_IsoMu17leg DoubleIsoMu17TkMu8_IsoMu17leg DoubleIsoMu17TkMu8_IsoMu8leg tag_DoubleIsoMu17TkMu8_IsoMu8leg tag_DoubleIsoMu17Mu8dZ_Mu17leg DoubleIsoMu17Mu8dZ_Mu17leg tag_DoubleIsoMu17TkMu8dZ_Mu17 DoubleIsoMu17TkMu8dZ_Mu17 Mu17 tag_Mu17 Tight2012 tag_Tight2012 pt mass tag_instLumi abseta tag_pt tag_eta tag_abseta event tag_combRelIsoPF04dBeta combRelIsoPF04dBeta phi eta tag_nVertices nVertices pfCombRelIso04EACorr SIP run"
 
 
 ////////////////clean pairs for double muon trigger and save the info of trigger path used in fitMuonTrigger*.py
@@ -31,7 +34,11 @@ root -l -b -q eff_Mu17Mu8_dZ.C
 
 
 
-
+git fetch
+git add *
+git status
+git commit -m "workflow of trigger study for 2016 data"
+git push
 
 
 
